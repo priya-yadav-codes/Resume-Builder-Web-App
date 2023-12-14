@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/pt2style.css" />
+
+    <title>
+        P2 Resume Template
+    </title>
+</head>
+<body>
+    <!--form--> 
+    <div class="container" id="resume-form">
+         <!--name,contact,email-->
+        <center> 
+        <div class="row" id="head">
+            <center> 
+            <div class="col-md-4">
+                <label class="title mt-2">Select Your Photo</label>
+               <div class="form-group">
+                <input id="imageField" type="file" class="form-control">
+               </div>
+             </div>
+            </center>
+            <div class="col-md-12 my-2">     
+                <div class="col-md-3  my-2"> 
+                <div class="form-group">
+                    <input type="text" id="nameField" placeholder="Enter Name" class="form-control" />  
+                </div>
+            </div>
+            <div class="col-md-3  my-2"> 
+                <div class="form group">
+                    <input type="text" id="contactField" placeholder="Enter Contact" class="form-control" />
+                </div>
+            </div>
+            <div class="col-md-3  my-2"> 
+                <div class="form group">
+                    <input type="text" id="emailField" placeholder="Enter Email" class="form-control" />
+                </div>
+            </div>
+     </div>
+    </center>
+     <!--objective,image-->
+    <div class="row"> 
+            <div class="col-md-12">
+                <div class="form group mt-4">
+                    <input id="obField" placeholder="Enter Objective" class="form-control" rows="2">
+                </div>
+            </div>
+                
+    </div>
+           <hr>
+           <!--work experience,acadmic,skills,hobbies,personal info-->
+           <div class="row"> 
+                <div class="col-md-7">
+                    <div class="form group mt-2" id="we">
+                        <label for="">Work Experience</label>
+                        <textarea placeholder="Enter here" id="weField" class="form-control wefield" rows="3"></textarea>
+                        <div class="container text-center mt-2" id="weddButton">
+                            <button onclick="addworkexpField()" class="btn btn-warning btn-sm">Add</button>
+                            </div>
+                    </div>
+                    <div class="form group mt-2" id="aq">
+                        <label for="">Academic Qualification</label>
+                        <textarea placeholder="Enter here" id="aqField" class="form-control eqField" rows="3"></textarea>
+                        <div class="container text-center mt-2" id="aqaddButton">
+                            <button onclick="addaqField()" class="btn btn-warning btn-sm">Add</button>
+                            </div>
+                    </div>
+                    <div class="col-my-2 mt-4"> 
+                        <div class="form-group " id="ski">
+                            <label for="">Skills</label>
+                            <textarea type="text" id="skills" placeholder="Enter your Skill" class="form-control skillfield"></textarea> 
+                            <div class="container text-center mt-2" id="saddButton">
+                            <button onclick="addNewskillField()" class="btn btn-warning btn-sm">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5" id="vl">
+                    <div class="form group mt-2" id="hobby">
+                        <label for="">Hobbies</label>
+                        <textarea  type="text" placeholder="Enter Hobbies" class="form-control hobbyfield" rows="3"></textarea>
+                        <div class="container text-center mt-2" id="hAddButton">
+                            <button onclick="addNewhobbyField()" class="btn btn-warning btn-sm">Add</button>
+                        </div>
+                        
+                    </div>
+
+                    <div class="form group mt-2" id="pi">
+                        <label for="">Personal information</label>
+                        <textarea  type="text" id="piField" placeholder="Enter personal information" class="form-control pifield " rows="3"></textarea>
+                        <div class="container text-center mt-2" id="piddButton">
+                            <button onclick="addpersonalinfoField()" class="btn btn-warning btn-sm">Add</button>
+                            </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <input type="text" id="dec" placeholder="Declaration" class="form-control"  /> 
+                    </div>
+                </div>
+           </div>
+           <!--generate resume-->
+           <div class="container text-center mt-3">
+            <button onclick="generateResume()" class="btn btn-warning btn-lg">Generate Resume</button>
+        </div>
+    </div>
+</div>
+ 
+
+<!--Template-->
+<div class="container" id="resume-template">
+    <!--name,contact,email-->
+    <center> 
+        <div class="row" id="head">
+            <center> 
+            <div class="col-md-4">
+                <img src="https://www.cmcaindia.org/wp-content/uploads/2015/11/default-profile-picture-gmail-2.png" alt="" 
+                class="img-fluid myimg" id="imgTemplate">
+    </div>
+</center>
+            <div class="col-md-12  ">     
+                <div class="col-md-3  "> 
+                <div class="form-group">
+                    <h3 id="nameT" class="text-center py-4" style="font-weight: 980;">
+                        Enter Your Name
+                    </h3>
+                </div>
+            </div>
+            <div class="col-md-3 "> 
+                <div class="form group">
+                    <p id="contactT">+919009637584, +91744325748</p>
+                </div>
+            </div>
+            <div class="col-md-3  "> 
+                <div class="form group">
+                    <p id="emailT">priya@gmail.com</p>
+                </div>
+            </div>
+     </div>
+    </center>
+    <!--objective,image-->
+    <div class="row"> 
+        <div class="col-md-12">
+            <div class="form group mt-4">
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <h3>Objective</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="objectiveT">
+                            My name is Priya Kate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- <div class="col-md-4">
+                <img src="https://www.cmcaindia.org/wp-content/uploads/2015/11/default-profile-picture-gmail-2.png" alt="" 
+                class="img-fluid myimg" id="imgTemplate">
+    </div> -->
+</div>
+<hr>
+ 
+<!--work experience,acadmic,skills,hobbies,personal info-->
+ 
+<div class="row"> 
+    <div class="col-md-12">
+        <div class="form group mt-2" id="we">
+            <div class="card mt-4">
+                <div class="card-header">
+                   
+                    <h3>Work Experirnce</h3>
+                </div>
+                <div class="card-body">
+                    <ul id="workExpT">
+                        <li> 
+                         TCS Infosys
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="form group mt-2" id="aq">
+            <div class="card mt-4">
+                <div class="card-header">
+                    <h3>Acadmic Qualification</h3>
+                </div>
+                <div class="card-body">
+                    <ul id="AcadmicT">
+                        <li> 
+                         10 12
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-my-2 mt-4"> 
+            <div class="card mt-4">
+                <div class="card-header">
+                    <h3>Skill</h3>
+                </div>
+                <div class="card-body">
+                  <ul id="skillT">
+                    <li> 
+                       Skill1
+                    </li>
+                  </ul> 
+                </div>
+            </div>
+        </div>
+        <div class="card mt-4">
+            <div class="card-header">
+                <h3>Hobbies</h3>
+            </div>
+            <div class="card-body">
+              <ul id="hobbyT">
+                <li> 
+                  hobby
+                </li>
+              </ul> 
+            </div>
+            </div>
+            <div class="form group mt-2" id="pit">
+                <div class="card mt-4">
+                    <div class="card-header"> 
+                        <h3>Personal information</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="piT">
+                            <li> 
+                              personal information
+                            </li>
+                          </ul> 
+                    </div>
+                </div>
+    
+            </div>
+            <div class="form group mt-2">
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <h3>Declaration</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="decT">
+                            here is my Declaration
+                         </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+ 
+    <div class="col-md-5" id="vl">
+       
+    </div>
+          <!--pdf generate-->
+        <div class="  text-center">
+            <input type="submit" onclick="printResume()" class="btn btn-warning btn-md background" value="Print" id="buttonT">
+        </div>
+    </div>
+</div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="js/pt2script.js"></script>
+ 
+</body>
+
+</html>

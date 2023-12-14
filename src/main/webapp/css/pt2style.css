@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+body
+{
+   background-color:white;
+    /* display: flex;
+   justify-content: center;
+   align-items: center; */
+}
+.container{
+    background-color: aliceblue;
+    width: 100%;
+    max-width: 1000px;
+   /* display: grid;
+    grid-template-columns: 8fr 10fr;*/
+}
+
+.title
+{
+  color:white;  
+}
+
+#head{
+    background-color: rgb(61, 61, 91);
+}
+#nameT{
+  color: rgb(228, 129, 9);
+}
+#contactT,#emailT{
+  color: azure;
+}
+/* #vl {
+    border-left: 1px solid rgb(167, 170, 167);
+    height: 500px;
+  } */
+ 
+  #L1,#L2,#L3{
+    color: rgb(96, 94, 92);
+  }
+  .myimg{
+    border-radius: 100%;
+    width: 200px;
+    border: 1px solid black;
+  }
+  #resume-template{
+    display: none;
+}

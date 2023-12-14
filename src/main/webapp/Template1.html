@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/P1style.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+        <title>
+            Resume Premium Template
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+         <!-- here goes html code -->
+        <div class="container" id="p1tForm">
+            <div class="left_Side">
+                
+                <div class="profileText">
+                    <div class="form group mt-2">
+                        <label for=""><h6 class="title text-center">Select your profile</h6></label>
+                        <input id="imageField" type="file" class="form-contrl"/>
+                    </div>
+                    
+                    <div class="form group mt-4">
+                        <input type="text" id="nameField" placeholder="Enter Your Name" class="form-control" h4 ><br></h4>
+                    </div>
+                    <div class="form group">
+                        <input type="text" id="branchField" placeholder="Enter Your Branch" class="form-control" h4 ><br></h4>
+                   </div>
+                </div>
+                
+                <div class="form group">  
+                    <h6 class="title">Personal Information</h6>
+                    <input type="text" id="contactField"  placeholder= "Enter Your Contact" class="form-control" />
+
+                </div>
+
+                <div class="form group mt-2">
+                    <input type="text" id="emailField" placeholder="Enter Your Email" class="form-control" />
+
+                </div>
+
+                <div class="form group mt-2">
+                    <textarea id="addressField" placeholder="Enter Your Address" class="form-control"></textarea>
+                </div>
+
+                <div class="form group mt-2">
+                    <input type="text" id="fbField" placeholder="Enter Your FB link" class="form-control" />
+                </div>
+
+                <div class="form group mt-2">
+                    <input type="text" id="instaField" placeholder="Enter Your Instagram link" class="form-control" />
+                </div>
+
+                <div class="form group mt-2">
+                    <input type="text" id="linkedField" placeholder="Enter Your LinkedIn link" class="form-control" />
+                </div>
+
+                <div class="form group mt-2" id="ed">
+                    <h6 class="title">Education</h6>
+                    <textarea  placeholder="Enter Education Details" class="form-control edField"></textarea>
+                    <div class="text-center mt-2" id="edAddButton">
+                        <button onclick="addNewEDField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+
+                <div class="form-group mt-2" id="la">
+                    <h6 class="title">Languages</h6>
+                    <textarea  placeholder="Enter Languages Known" class="form-control laField"></textarea>
+                    <div class="text-center mt-2" id="laAddButton">
+                        <button onclick="addNewLAField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+            <div class="right_Side">
+                
+                <div class="about mt-2">
+                    <h4 class="title2">Profile</h4>
+                    <textarea id="prField" placeholder="Enter here" class="form-control" rows="5"></textarea>
+                </div>
+
+                <div class="about mt-2" id="ex">
+                    <h4 class="title2">Experience</h4>
+                    <textarea placeholder="Enter here" class="form-control exField"></textarea>
+                    <div class="text-center mt-2" id="exAddButton">
+                        <button onclick="addNewEXField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+
+                <div class="about mt-2" id="ps">
+                    <h4 class="title2">Professional Skills</h4>
+                    <textarea placeholder="Enter skills" class="form-control psField"></textarea>
+                    <div class="text-center mt-2" id="psAddButton">
+                        <button onclick="addNewPSField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+
+                <div class="about mt-2" id="i">
+                    <h4 class="title2">Interest</h4>
+                    <textarea placeholder="Enter here" class="form-control iField"></textarea>
+                    <div class="text-center mt-2" id="iAddButton">
+                        <button onclick="addNewIField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                    
+                </div>
+
+                <div class="about mt-2" id="oi">
+                    <h4 class="title2">Other Information</h4>
+                    <textarea placeholder="Enter here" class="form-control oiField"></textarea>
+                    <div class="text-center mt-2" id="oiAddButton">
+                        <button onclick="addNewOIField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div>
+                <div id="mybutton">
+                    <button onclick="generateResume()" class="resume">Generate Resume</button>
+                </div>
+            </div>     
+        </div>
+
+        <!--resume template-->   
+        <div class="container" id="p1tTemplate">
+            <div class="left_Side">
+                <div class="profileText">
+                    <div class="imgBx">
+                       <img src="https://www.cmcaindia.org/wp-content/uploads/2015/11/default-profile-picture-gmail-2.png" alt="" 
+                class="img-fluid myimg" id="imgTemplate">
+                    </div>   
+                </div>
+
+                <div class="form group mt-4">
+                    <h6 id="nameT" class="text-center">
+                        Enter Your Name
+                    </h6>
+                </div>
+                
+                <div class="form group">
+                    <h6 id="branchT" class="text-center py-4" >
+                        Enter Your Branch
+                    </h6>
+                </div>
+                
+                <div class="form group">  
+                    <h6 class="title text-center">Personal Information</h6>
+                    <h6 id="contactT" class="text-center">
+                        Enter Your Contact
+                    </h6>
+                </div>
+                
+                <div class="form group mt-2">
+                    <h6 id="emailT" class="text-center">
+                        Enter Your Email
+                    </h6> 
+                </div>
+                
+                <div class="form group mt-2">
+                    <h6 id="addressT" class="text-center">
+                        Enter Your Address
+                    </h6>
+                </div>
+                
+                <div class="form group mt-2">
+                    <h6 id="fbT" class="text-center">
+                        Enter Your Facebook Link
+                    </h6>
+                </div>
+                
+                <div class="form group mt-2">
+                    <h6 id="instaT" class="text-center">
+                        Enter Your Instagram Link
+                    </h6>
+                </div>
+                
+                <div class="form group mt-2">
+                    <h6 id="linkedT" class="text-center">
+                        Enter Your  LinkedIn Link
+                    </h6>
+                </div>
+                
+                <div class="form group mt-2" id="ed">
+                    <h6 class="title text-center">Education</h6>
+                    <div class="card-body">
+                        <ul id="edT">
+                            <li> 
+                                Enter Your  Education Details
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+                
+                <div class="form group mt-2" id="la">
+                    <h6 class="title text-center">Languages</h6>
+                    <div class="card-body">
+                        <ul id="laT">
+                            <li> 
+                                Enter Languages Known
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="right_Side">
+                <div class="form group mt-2" id="pr">
+                    <h4 class="title2">Profile</h4>
+                    <div class="form group mt-2">
+                        <h6 id="prT" class="" rows="5">
+                            Enter here
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="form group mt-2" id="ex">
+                    <h4 class="title2">Experience</h4>
+                    <div class="card-body">
+                        <ul id="exT">
+                            <li> 
+                                Enter Your Experience
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+
+                <div class="form group mt-2" id="ps">
+                    <h4 class="title2">Professional Skills</h4>
+                    <div class="card-body">
+                        <ul id="psT">
+                            <li> 
+                                Enter Your Skills
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+
+                <div class="form group mt-2" id="i">
+                    <h4 class="title2">Interest</h4>
+                    <div class="card-body">
+                        <ul id="iT">
+                            <li> 
+                                Enter here
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+
+                <div class="form group mt-2" id="oi">
+                    <h4 class="title2">Other Information</h4>
+                    <div class="card-body">
+                        <ul id="oiT">
+                            <li> 
+                                Enter here
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="containertext-center">
+                <input type="submit" onclick="printResume()" class="btn btn-primary btn-lg background" value="Print" id="buttonT">
+                    
+            </div>
+        </div>
+        
+        
+       
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <script src="js/P1script.js"></script>
+        
+
+    </body>
+
+</html>

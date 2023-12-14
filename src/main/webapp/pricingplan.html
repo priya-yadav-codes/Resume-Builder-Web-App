@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Pricing Plans</title>
+    
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/sidebar.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+	
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jPushMenu.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    
+    <script type="text/javascript">
+		$(window).load(function() {
+			$(".loader").fadeOut("slow");
+		})
+	</script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+	<div class="loader"></div>
+	
+	<style>
+	
+	.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('images/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+	}
+	
+	</style>
+	
+	<header>
+	
+		<div class="top-heading">
+			<div class="container">
+				<div class="contact-info pull-left">
+					<a href="#"><span class="fa fa-phone"></span>+91 0731 1234 1234</a>
+				</div>
+				<ul class="social-icons pull-right">
+					<li><a href="#" class="icon fa fa-facebook"></a></li>
+					<li><a href="#" class="icon fa fa-twitter"></a></li>
+					<li><a href="#" class="icon fa fa-pinterest-p"></a></li>
+					<li><a href="#" class="icon fa fa fa-google-plus"></a></li>
+				</ul>
+			</div>
+		</div>
+
+        <nav class="navbar-default navbar-static-top" id="navbar-default" style="border-radius:0;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle toggle-menu menu-left push-body" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                        <a class="navbar-brand" href=""></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pricingplan.html"><span>Plans</span></a></li>
+                        <li><a href="contact.html">Feedback</a></li>
+			 <li><a href="clients.html">Sign-In</a></li>
+                                                 
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        
+        <style>
+        
+        	.navbar-default {
+        		background: #f5f5f5;
+        	}
+        
+        	.navbar-default .navbar-nav li a {
+        		color: rgb(0, 0, 0);
+        	}
+        	
+        	.navbar-default .navbar-toggle .icon-bar {
+				background: #000;
+			}
+			
+			.navbar-nav {
+				float: right;
+			}
+			
+			@media screen and (max-width: 768px) {
+			.navbar-nav {
+				float: left;
+			}
+			}
+			
+        
+        </style>
+
+        
+    </header>
+
+    <div class="container">
+    	<ul class="breadcrumb">
+  			<li><a href="index.html">Home</a> <span class="divider">/</span></li>
+  			<li class="active">Plans</li>
+		</ul>
+	</div>
+
+	
+    <div class="pricing-table">
+    	<div class="container">
+    		<div class="table">
+    			<div class="col-md-6 col-sm-4">
+    				<div class="block">
+    					<div class="cost">
+    						<h3>Free</h3>
+    						<h1><span class="symbol">&dollar;</span>0<span class="monthly">/year</span></h1>
+    						<p>Free of cost</p>
+    					</div>
+    				
+    					<div class="info">
+    						<ul class="item-list">
+    							<li>Basic Templates</li>
+    							<li>One-page Resume</li>
+                                <li>Predefined Layouts</li>
+                                <li>One-time download</li>
+
+  
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6 col-sm-4">
+    				<div class="block">
+    					<div class="cost">
+    						<h3>Premium</h3>
+    						<h1><span class="symbol">&dollar;</span>12<span class="monthly">/year</span></h1>
+    						<p>Billed annually</p>
+<!--                                                at &dollar;144-->
+    					</div>
+    				
+    					<div class="info">
+    						<ul class="item-list">
+    							<li>Premium Templates</li>
+                                <li>One-page Resume</li>
+    							<li>Custom Layout</li>
+                                <li>One-time download</li>
+                                <li>Image in Resume</li>
+                                <li></li>
+                                <li></li>
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+    			
+    			
+    		</div>
+    	</div>
+    </div>
+    
+
+    <div class="clients">
+		<div class="container">
+        	<div class="row">
+            	<div class="col-md-12">
+                	<div class="carousel slide clients-carousel" id="clients-slider">
+                    	<div class="carousel-inner">
+                        	<div class="item active">
+                            	<div class="row">
+                                	<div class="col-md-3 col-sm-3 col-xs-6">
+                                    	<a class="thumbnail" href="#">
+                                        	<img src="images/clients/client1.png" alt="" />
+                                    	</a>
+                                	</div>
+                                	<div class="col-md-3 col-sm-3 col-xs-6">
+                                    	<a class="thumbnail" href="#">
+                                        	<img src="images/clients/client2.png" alt="" />
+                                    	</a>
+                                	</div>
+                                	<div class="col-md-3 col-sm-3 col-xs-6">
+                                    	<a class="thumbnail" href="#">
+                                        	<img src="images/clients/client3.png" alt="" />
+                                    	</a>
+                                	</div>
+                                	<div class="col-md-3 col-sm-3 col-xs-6">
+                                    	<a class="thumbnail" href="#">
+                                        	<img src="images/clients/client4.png" alt="" />
+                                    	</a>
+                                	</div>
+                            	</div>
+                        	</div>
+                        	<div class="item">
+                            	<div class="row">
+                                	<div class="col-md-3 col-sm-3 col-xs-6">
+                                    	<a class="thumbnail" href="#">
+                                        	<img src="images/clients/client5.png" alt="" />
+                                    	</a>
+                                	</div>
+                                	<div class="col-md-3 col-sm-3 col-xs-6">
+                                    	<a class="thumbnail" href="#">
+                                        	<img src="images/clients/client6.png" alt="" />
+                                    	</a>
+                                	</div>
+                                	<div class="col-md-3 col-sm-3 col-xs-6">
+                                    	<a class="thumbnail" href="#">
+                                        	<img src="images/clients/client7.png" alt="" />
+                                   	 	</a>
+                                	</div>
+                                	<div class="col-md-3 col-sm-3 col-xs-6">
+                                    	<a class="thumbnail" href="#">
+                                        	<img src="images/clients/client8.png" alt="" />
+                                    	</a>
+                                	</div>
+                            	</div>
+                        	</div>
+                    	</div>
+                	</div>
+            	</div>
+        	</div>
+        </div>
+	</div>
+	
+	
+	<div class="more-information">
+		<div class="container">
+			<div class="col-md-6">
+				<div class="sides">
+					<h4>Why Choose Us</h4>
+					<hr>
+					<p>Contrast's resume creator helped thousand of users create their resumes and start out on their dream careers. Try it for yourself.</p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="sides">
+					<h4>What We Will Do</h4>
+					<hr>
+					<p>We believe that landing a job and building the perfect resume should be simple, and that a poorly written resume should be the last reason for not getting the job that you want. We’re dedicated to make sure that doesn’t happen. We aggregated thousands of resumes for hundreds of jobs and job descriptions from thousands of small businesses and large, international companies like Amazon, Apple, Morgan Stanley, Goldman Sachs, and more. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<div class="subscribe">
+		<div class="opacity_overlay">
+			<div class="container">
+				<h3>Subscribe</h3>
+				<p>Be the first to hear our latest news</p>
+				
+				<form class="form-subscribe" action="#">
+					<div class="input-group">
+						<input type="text" class="form-input" placeholder="Your Email Address" required>
+						<span class="btn-group">
+							<button class="btn" type="submit">Subscribe</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+	<footer class="footer">
+		<div class="container">
+			<div class="col-md-4 col-sm-6">
+				<h3>What is a Resume Builder?</h3>
+				<hr>
+				<p>A resume builder is an online app or software that provides users with interactive forms and templates. The best applications of this type share insights and suggestions to help you give employers the right kind of information.</p>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<h3>About Us</h3>
+				<hr>
+				<p>Contrast's resume creator helped thousand of users create their resumes and start out on their dream careers. <br>
+				Each day, we help thousands of people write resumes and cover letters, and improve their chances of landing a job.</p>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<h3>Contact Info</h3>
+				<hr>
+				<ul class="contact-list">
+					<li>
+						<p>
+							<i class="fa fa-home"></i>
+							  Indore , Madhya Pradesh
+						</p>
+						<p>
+							<i class="fa fa-phone"></i>
+							+91 90876 54321
+						</p>
+						<p>
+							<i class="fa fa-envelope-o"></i>
+							support@Contrast.com
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	
+	<div class="copyright-part">
+		 
+	</div>
+    
+    
+    <script type="text/javascript">
+    
+      $(document).ready(function(){
+        $('.toggle-menu').jPushMenu({closeOnClickLink: false});
+        $('.dropdown-toggle').dropdown();
+      });
+      
+    </script>
+
+<script type="text/javascript">
+    
+    var terms = ["Simple", "Easy", "Elegant"];
+
+    function rotateTerm() {
+          var ct = $("#rotate").data("term") || 0;
+          $("#rotate").data("term", ct == terms.length -1 ? 0 : ct + 1).text(terms[ct]).fadeIn()
+              .delay(1000).fadeOut(200, rotateTerm);
+    }
+    $(rotateTerm);
+
+</script>
+
+
+<script type="text/javascript">
+
+  jQuery('.counter-item').appear(function() {
+    jQuery('.counter-number').countTo();
+    jQuery(this).addClass('funcionando');
+        console.log('funcionando');
+  });
+
+</script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#clients-slider").carousel({
+            interval: 5000 //TIME IN MILLI SECONDS
+        });
+    });
+    
+</script>
+    
+    
+    
+    
+    
+    
+    <script type="text/javascript">
+    
+    $(function () {
+  		$.scrollUp({
+    		scrollName: 'scrollUp', // Element ID
+    		topDistance: '300', // Distance from top before showing element (px)
+    		topSpeed: 600, // Speed back to top (ms)
+    		animation: 'fade', // Fade, slide, none
+    		animationInSpeed: 200, // Animation in speed (ms)
+    		animationOutSpeed: 200, // Animation out speed (ms)
+    		activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+    		scrollImg: true,
+  		});
+	});
+    
+    </script>
+</body>
+</html>

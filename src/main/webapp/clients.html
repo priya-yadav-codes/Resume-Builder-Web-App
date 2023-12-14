@@ -1,0 +1,184 @@
+<!-- This is Sign-Up Page-->
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Services</title>
+    
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/sidebar.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+	 <link rel="stylesheet" href="style1.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jPushMenu.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    
+    <script type="text/javascript">
+		$(window).load(function() {
+			$(".loader").fadeOut("slow");
+		})
+	</script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+	<div class="loader"></div>
+	
+	<style>
+	
+	.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('images/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+	}
+	
+	</style>
+	
+	<header>
+	
+		<div class="top-heading">
+			<div class="container">
+				<div class="contact-info pull-left">
+					<a href="#"><span class="fa fa-phone"></span>+91 0731 1234 1234</a>
+				</div>
+				<ul class="social-icons pull-right">
+					<li><a href="#" class="icon fa fa-facebook"></a></li>
+					<li><a href="#" class="icon fa fa-twitter"></a></li>
+					<li><a href="#" class="icon fa fa-pinterest-p"></a></li>
+					<li><a href="#" class="icon fa fa fa-google-plus"></a></li>
+				</ul>
+			</div>
+		</div>
+
+        <nav class="navbar-default navbar-static-top" id="navbar-default" style="border-radius:0;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle toggle-menu menu-left push-body" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                        <a class="navbar-brand" href="index.html"></a>
+                </div>
+				
+				<!-- Collect the nav links, forms, and other content for toggling -->
+                
+
+				<div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                          <li><a href="pricingplan.html">Plans</a></li>
+                        <li><a href="contact.html">Feedback</a></li>
+			 <li><a href="clients.html"><span>Sign-In</span></a></li>
+                                                 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+            
+        <style>
+        
+        	.navbar-default {
+        		background: #F5F5F5;
+        	}
+        
+        	.navbar-default .navbar-nav li a {
+        		color: #000;
+        	}
+        	
+        	.navbar-default .navbar-toggle .icon-bar {
+				background: #000;
+			}
+			
+			.navbar-nav {
+				float: right;
+			}
+			
+			@media screen and (max-width: 768px) {
+			.navbar-nav {
+				float: left;
+			}
+			}
+			
+        
+        </style>
+
+        
+    </header>
+    
+    <script type="text/javascript">
+    
+      $(document).ready(function(){
+        $('.toggle-menu').jPushMenu({closeOnClickLink: false});
+        $('.dropdown-toggle').dropdown();
+      });
+      
+    </script>
+    
+    
+    <script type="text/javascript">
+    
+    $(function () {
+  		$.scrollUp({
+    		scrollName: 'scrollUp', // Element ID
+    		topDistance: '300', // Distance from top before showing element (px)
+    		topSpeed: 600, // Speed back to top (ms)
+    		animation: 'fade', // Fade, slide, none
+    		animationInSpeed: 200, // Animation in speed (ms)
+    		animationOutSpeed: 200, // Animation out speed (ms)
+    		activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+    		scrollImg: true,
+  		});
+	});
+    
+    </script>
+    
+      
+    <div class="center">
+
+      <h1>Login</h1>
+      <form action="LoginServlet" method="post">
+        <div class="txt_field">
+            <input type="text" name="username" required>
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div class="txt_field">
+            <input type="password" name="password" required>
+          <span></span>
+          <label>Password</label>
+        </div>
+        <div class="pass"></div>
+        <input type="submit" value="Login">
+        <div class="signup_link">
+            <a href="forgotPassword.jsp">Forgot Password?</a>
+        </div>
+        <div class="signup_link">
+           If not registered? <a href="registration.html">Register here...</a>
+          </div>
+      </form>
+    </div>
+    
+         
+</body>
+
+</html>

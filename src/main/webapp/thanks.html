@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="thankStyle.css">
+    <style>
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #5ae2efbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <pre> 
+        <h1>Your transaction has been processed successfully......</h1> <!--random number generation-->
+        <h2><script>
+        var x = Math.floor((Math.random()*1000000000000000000));  
+        document.write("Your Transaction id is: ",x);
+        </script></h2>
+    <center> 
+      <button type="button" onclick="openPopup()" class="btn">Done</button>
+    </center>
+        </pre>
+    <div class="popup" id="popup">
+        <img src="images/tick.jpg">
+        <h2>Thank You</h2>
+        <p>premium templates are open now</p>
+        <button type="button" onclick="closePopup()"><a href="premium.html">Ok</a></button>
+    </div>
+
+</div>
+</div>
+<br>
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        
+        }    
+    </script>
+</body>
+</html>

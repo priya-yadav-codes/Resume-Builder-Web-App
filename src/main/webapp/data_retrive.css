@@ -1,0 +1,10 @@
+body{
+    background-image: url("bg1r.gif");
+    background-repeat: no-repeat;
+    background-size:1400px 700px;
+}
+
+table{
+    border: 2.5px solid black;
+}
+ 

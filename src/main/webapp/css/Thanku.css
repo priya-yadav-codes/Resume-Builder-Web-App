@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: teal;    
+    overflow: hidden;
+}
+
+.text-container h1{
+    columns: #fff;
+    font-size: 300px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 80px;
+}
+
+.text-container h1 span{
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.text-container .animated-text{
+    position: relative;
+    background: #4285f4;
+    margin-top: 15px;
+    width: 570px;
+    height: 75px;
+    box-shadow: 0 0 10px #4285f4,
+                0 0 120px #4285f4;
+}
+
+.text-container .animated-text::before{
+    content: '';
+    background: rgba(255,255,255, 0.1);
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    transform: skew(25deg) translateX(-20px);
+}
+
+.text-container .animated-text h2{
+    color: #fff;
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 75px;
+}
+
+.text-container .animated-text h2:nth-child(1){
+    animation: text-move 22s infinite;
+}
+
+.home {
+    background-color : #31B0D5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border-color: #46b8da;
+  }
+  
+  #mybutton {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+  }
+
+@keyframes text-move{
+    0%{
+        margin-top: 0;
+    }
+    10%{
+        margin-top: -75px;
+    }
+    20%{
+        margin-top: -150px;
+    }
+    30%{
+        margin-top: -225px;
+    }
+    40%{
+        margin-top: -300px;
+    }
+    50%{
+        margin-top: -375px;
+    }
+    60%{
+        margin-top: -300px;
+    }
+    70%{
+        margin-top: -225px;
+    }
+    80%{
+        margin-top: -150px;
+    }
+    90%{
+        margin-top: -75px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
